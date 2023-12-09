@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=], initial-scale=1.0" />
+    <title>ViaCep</title>
+    <link
+      rel="shortcut icon"
+      href="./assets/images/icon/images.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-content">
+        <div>
+          <h1>ViaCep</h1>
+        </div>
+        <div class="header-content-links">
+          <a class="header-link">Sobre</a>
+          <a class="header-link">Contato</a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="content-form">
+        <div class="form">
+          <label for="cep"> Cep </label>
+          <input
+            text="text"
+            id="cep"
+            placeholder="Digite seu CEP"
+            onChange="{handleCep}"
+          />
+          <div class="form-error"></div>
+          <label for="logradouro"> Logradouro </label>
+          <input
+            readonly
+            text="text"
+            id="logradouro"
+            placeholder="Digite seu Logradouro"
+          />
+          <label for="bairro"> bairro </label>
+          <input
+            text="text"
+            readonly
+            id="bairro"
+            placeholder="Digite seu bairro"
+          />
+          <label for="cidade"> cidade </label>
+          <input
+            text="text"
+            readonly
+            id="cidade"
+            placeholder="Digite seu cidade"
+          />
+          <label for="estado"> estado </label>
+          <input
+            text="text"
+            readonly
+            id="estado"
+            placeholder="Digite seu estado"
+          />
+          <div class="btn-content">
+            <input type="submit" onclick="ClicarBotao()" class="btn" />
+            <input
+              type="submit"
+              value="Limpar"
+              onclick="LimparInputs()"
+              class="btn"
+            />
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
